@@ -1,0 +1,19 @@
+$NetBSD: patch-doc_lighttpd.8,v 1.4 2025/04/04 13:30:18 schmonz Exp $
+
+Follow hier(7).
+
+--- doc/lighttpd.8.orig	2020-11-29 22:32:01.000000000 +0000
++++ doc/lighttpd.8
+@@ -56,10 +56,10 @@ Show a brief help message and exit.
+ .
+ .SH FILES
+ .TP 8
+-/etc/lighttpd/lighttpd.conf
++@PKG_SYSCONFDIR@/lighttpd.conf
+ The standard location for the configuration file.
+ .TP 8
+-/run/lighttpd.pid
++@LIGHTTPD_STATEDIR@/lighttpd.pid
+ The standard location for the PID of the running \fBlighttpd\fP process.
+ .
+ .SH SEE ALSO
